@@ -75,7 +75,7 @@ nav ul li:hover, nav ul li a:hover {
     }
     nav {
         flex-direction: column;
-        position: sticky;
+        position: static;
     }
     nav ul {
         text-align: center;
@@ -113,8 +113,7 @@ nav ul li:hover, nav ul li a:hover {
 
 .main{
     display: flex;
-    width: 100%;
-    height: 100vh;
+    height: 80vh;
     justify-content: space-between;
     background-color: #000;
 }
@@ -125,7 +124,7 @@ nav ul li:hover, nav ul li a:hover {
     color: white;
     align-content: center;
 }
-.main h2, .animated-text {
+h2, .animated-text {
     margin-left: 190px;
 }
 
@@ -135,10 +134,16 @@ nav ul li:hover, nav ul li a:hover {
 }
 
 
+.main-character
+{
+    position: absolute;
+    right: 100px;
+    top: 90px;
+}
+
 .main img {
-    width: 500px;
+    width: 600px;
     height: 500px;
-    margin: 100px;
 
 }
 
@@ -207,7 +212,17 @@ nav ul li:hover, nav ul li a:hover {
 
 
 
+@media all and (max-width: 870px){
 
+
+   .main .main-character img
+    {
+        
+        display: none;
+    }
+
+
+}
 
 
 
@@ -417,7 +432,26 @@ nav ul li:hover, nav ul li a:hover {
 
 
 
+@media all and (max-width: 870px){
 
+
+
+    #skills
+    {
+        margin-top: 450px;
+    }
+
+
+.container .skills-card
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+}
 
 
 
@@ -472,15 +506,13 @@ nav ul li:hover, nav ul li a:hover {
 
 
 .project-1 h3,p {
-    text-align: center;
+    line-height: 25px;
     text-decoration: none;
 }
 
 .project-1:hover {
     transform: translateY(-5px);
     box-shadow: 0px 1px 2px 2px rgb(64, 64, 64);
-    background-color: rgb(76, 76, 214);
-    color: #fff;
 }
 
 .project-2 {
@@ -517,7 +549,22 @@ nav ul li:hover, nav ul li a:hover {
 
 
 
+@media all and (max-width: 870px){
 
+    .portfolio .project-1
+    {
+        padding: 50px;
+        text-align: center;
+        line-height: 30px;
+        
+
+    }
+    .portfolio img 
+    {
+        display: none;
+
+    }
+}
 
 
 
@@ -582,7 +629,24 @@ nav ul li:hover, nav ul li a:hover {
 
 
 
+ @media all and (max-width: 870px){
 
+
+
+    .contact form .name {
+        width: 100%;
+    }
+
+    .contact form .email {
+        width: 100%;
+    }
+    .contact form button {
+        width: 100%;  
+    }
+        
+        
+    
+ }
 
 
 
@@ -645,7 +709,13 @@ nav ul li:hover, nav ul li a:hover {
 
 
 
+@media all and (max-width: 870px){
 
+    .footer img
+    {
+        margin-left: 30px;
+    }
+}
 
 
 
